@@ -42,7 +42,7 @@ print(m1)
 n1 = average_precision_score([0,0,0,0,0,0,0,0,0,0], [1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1], average='samples')
 print(n1)
 
-O1 = average_precision_score([1,1,0,0,0,0,0,0,0,0], [1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1], average='samples')
+O1 = average_precision_score([0,1,0,1,0,0,0,0,0,0], [1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1], average='samples')
 print(O1)
 
 map = (a1+b1+c1+d1+e1+f1+g1+h1+i1+j1+k1+l1+m1+0+O1)/15
