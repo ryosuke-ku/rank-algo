@@ -1,6 +1,6 @@
 from sklearn.metrics import label_ranking_average_precision_score, average_precision_score
 
-a1 = average_precision_score([1,1,1,1,1,0,0,0,0,0], [1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1], average='samples')
+a1 = average_precision_score([1,1,1,1,1,0,1,0,0,0], [1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1], average='samples')
 print(a1)
 
 b1 = average_precision_score([1,1,1,1,1,0,0,0,0,0], [1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1], average='samples')

@@ -1,6 +1,6 @@
 from sklearn.metrics import label_ranking_average_precision_score, average_precision_score
 
-a1 = average_precision_score([1,1,1,1,1,0,0,0,0,0], [1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1], average='samples')
+a1 = average_precision_score([1,1,1,1,1,1,0,0,0,0], [1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1], average='samples')
 print(a1)
 
 b1 = average_precision_score([1,1,1,1,1,0,0,0,0,0], [1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1], average='samples')
@@ -45,7 +45,7 @@ print(n1)
 O1 = average_precision_score([1,1,0,0,0,0,0,0,0,0], [1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1], average='samples')
 print(O1)
 
-map = (a1+b1+c1+d1+e1+f1+g1+h1+i1+j1+k1+l1+m1+n1+O1)/15
+map = (a1+b1+c1+d1+e1+f1+g1+h1+i1+j1+k1+l1+m1+0+O1)/15
 print("map1: " + str(map))
 
 
