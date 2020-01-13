@@ -42,7 +42,10 @@ print(m1)
 n1 = average_precision_score([0,0,0,0,0,0,0,0,0,0], [1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1], average='samples')
 print(n1)
 
-map = (a1+b1+c1+d1+e1+f1+g1+h1+i1+j1+k1+l1+m1+0)/14
+O1 = average_precision_score([1,1,0,0,0,0,0,0,0,0], [1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1], average='samples')
+print(O1)
+
+map = (a1+b1+c1+d1+e1+f1+g1+h1+i1+j1+k1+l1+m1+0+O1)/15
 print("map1: " + str(map))
 
 
@@ -88,7 +91,10 @@ print(m2)
 n2 = average_precision_score([1,1,0,1,0,0,0,0,0,0], [1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1], average='samples')
 print(n2)
 
-map2 = (a2+b2+c2+d2+e2+f2+g2+h2+i2+j2+k2+l2+m2+n2)/14
+O2 = average_precision_score([1,1,1,1,0,0,0,0,0,0], [1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1], average='samples')
+print(O2)
+
+map2 = (a2+b2+c2+d2+e2+f2+g2+h2+i2+j2+k2+l2+m2+n2+O2)/15
 print("map2: " + str(map2))
 
 #label_ranking_average_precision_score([[1, 0, 1, 0]], [[1, 0.8, 0.6, 0.4]])
