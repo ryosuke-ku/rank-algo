@@ -21,5 +21,5 @@ with open('similarity1.csv','r',encoding = "utf-8-sig") as f:
             map_array.append(ap)
         print(ap_array)
         print('ap:' + str(ap))
-    print('map:' + str(sum(map_array)/15))
+    print('map:' + str(sum(map_array)/15*100))
         # print(r)
